@@ -1,5 +1,5 @@
-
 import requests
+import json
 
 url = "https://cricbuzz-cricket.p.rapidapi.com/mcenter/v1/40381/hscard"
 headers = {
@@ -8,7 +8,6 @@ headers = {
 }
 
 response = requests.get(url, headers=headers)
-
-#print(response.status_code)
-#print(response.text)
-print(response.json())
+print("Status code:", response.status_code)
+print("Response text:")
+print(response.text)

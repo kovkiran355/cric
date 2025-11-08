@@ -8,11 +8,11 @@ import os
 app = Flask(__name__)
 
 def fetch_cricket_scores():
-    url = "https://cricbuzz-cricket.p.rapidapi.com/matches/v1/recent"
+    url = "https://cricbuzz-cricket.p.rapidapi.com/mcenter/v1/40381/hscard"
 
     headers = {
         "X-RapidAPI-Host": "cricbuzz-cricket.p.rapidapi.com",
-        "X-RapidAPI-Key": "Replace with your RapidAPI key"  
+        "X-RapidAPI-Key": "6efc557281mshce2d68c7f8aa843p1e5a21jsn0c509d80627c"  
     }
     response = requests.get(url, headers=headers)
     data = response.json()
@@ -37,7 +37,7 @@ def fetch_upcoming_matches():
 
     headers = {
         "X-RapidAPI-Host": "cricbuzz-cricket.p.rapidapi.com",
-        "X-RapidAPI-Key": "1bd0a14833mshc18ed4be5953504p1236e8jsn709d3a0bc623"  # Replace with your RapidAPI key
+        "X-RapidAPI-Key": "6efc557281mshce2d68c7f8aa843p1e5a21jsn0c509d80627c"  # Replace with your RapidAPI key
     }
     #
     response = requests.get(url, headers=headers)
