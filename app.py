@@ -33,7 +33,7 @@ def fetch_cricket_scores():
     return matches_data
 
 def fetch_upcoming_matches():
-    url = "https://cricbuzz-cricket.p.rapidapi.com/schedule/v1/international"
+    url = "https://cricbuzz-cricket.p.rapidapi.com/mcenter/v1/40381/hscard"
 
     headers = {
         "X-RapidAPI-Host": "cricbuzz-cricket.p.rapidapi.com",
