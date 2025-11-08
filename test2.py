@@ -2,11 +2,11 @@ import requests
 from tabulate import tabulate
 
 def fetch_cricket_scores():
-    url = "https://cricbuzz-cricket.p.rapidapi.com/matches/v1/recent"
+    url = "https://cricbuzz-cricket.p.rapidapi.com/mcenter/v1/40381/hscard"
 
     headers = {
         "X-RapidAPI-Host": "cricbuzz-cricket.p.rapidapi.com",
-        "X-RapidAPI-Key": "Replace with your RapidAPI key"  # Replace with your RapidAPI key
+        "X-RapidAPI-Key": "6efc557281mshce2d68c7f8aa843p1e5a21jsn0c509d80627c"  # Replace with your RapidAPI key
     }
     response = requests.get(url, headers=headers)
     data = response.json()
